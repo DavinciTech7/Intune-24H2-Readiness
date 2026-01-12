@@ -16,8 +16,6 @@ Read-only; only creates log folder at C:\Temp\24H2_Detection_Readiness.
 Fails checks on incomplete or conflicting data to avoid false "Compliant".
 Outputs Compliant (exit 0) or NonCompliant (exit 1) for Intune.
 Logs system snapshot and per-requirement PASS/FAIL details.
-
-Strict Checks:
 CPU: frequency ≥1 GHz, ≥2 cores, 64-bit; discards invalid values.
 Firmware: multi-source UEFI validation via registry, BCDEdit, and Confirm-SecureBootUEFI.
 TPM: combines Get-Tpm and WMI SpecVersion "2.0"; must be present, enabled, and activated.
@@ -29,8 +27,6 @@ Fixes Windows Update services required for Windows 11 24H2 upgrade:
 wuauserv (Windows Update)
 BITS (Background Intelligent Transfer Service)
 cryptsvc (Cryptographic Services)
-
-Script Behavior
 Verifies service existence.
 Sets startup type to at least Manual if disabled.
 Starts stopped services.
