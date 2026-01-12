@@ -1,4 +1,3 @@
-Windows 11 24H2 Intune Proactive Remediation :
 These PowerShell scripts form a Proactive Remediation package for Microsoft Intune (now called Remediations). The detection script strictly validates Windows 11 24H2 hardware readiness with no false positives, while the remediation ensures critical Windows Update services are healthy.
 
 Detection Script:
